@@ -3,7 +3,7 @@
 El proyecto se hizo utilizando .NET, y PostgreSQL como motor de base de datos. El fichero SQL se encuentra
 en los archivos de este repositorio.
 
-**TENER EN CUENTA MODIFICAR LOS PAR�METROS DE LA CONEXI�N EN LA CLASE Connection.cs.**
+**TENER EN CUENTA MODIFICAR LOS PARÁMETROS DE LA CONEXIÓN EN LA CLASE Connection.cs.**
 
 - host
 - user
@@ -11,5 +11,15 @@ en los archivos de este repositorio.
 - dbName
 - port
 
-**DEBEN COINCIDIR CON LA CONFIGURACI�N DEL RESPECTIVO SERVIDOR DE POSTGRESQL DONDE SE EST� EJECUTANDO.**
+**DEBEN COINCIDIR CON LA CONFIGURACIÓN DEL RESPECTIVO SERVIDOR DE POSTGRESQL DONDE SE ESTÁ EJECUTANDO.**
+
+## Estructura
+
+El proyecto está conformado por diferentes clases. Agrupadas en carpetas:
+
+-Models: Contiene las clases-entidades que contienen la información de un registro y sus métodos para interactuar en la base de datos
+-Controllers: Contiene las clases donde debería estar la lógica de negocio.
+-Views: La parte gráfica, los formularios.
+
+
 
