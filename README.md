@@ -17,9 +17,9 @@ en los archivos de este repositorio.
 
 El proyecto está conformado por diferentes clases. Agrupadas en carpetas:
 
--Models: Contiene las clases-entidades que contienen la información de un registro y sus métodos para interactuar en la base de datos
--Controllers: Contiene las clases donde debería estar la lógica de negocio.
--Views: La parte gráfica, los formularios.
+- Models: Contiene las clases-entidades que contienen la información de un registro y sus métodos para interactuar en la base de datos.
+- Controllers: Contiene las clases donde debería estar la lógica de negocio.
+- Views: La parte gráfica, los formularios.
 
 
 
