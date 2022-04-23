@@ -89,22 +89,16 @@ namespace frmAeropuerto.Models
             cmd.Parameters.AddWithValue("@airline", Airline);
             cmd.Parameters.AddWithValue("@state", State);
 
-            try
+            
+            if (cmd.ExecuteNonQuery() == 1)
             {
-
-                if (cmd.ExecuteNonQuery() == 1)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return true;
             }
-            catch (Exception)
+            else
             {
                 return false;
             }
+            
 
         }
         //Método que obtiene la lista de los vuelos existentes en la base de datos
@@ -137,21 +131,16 @@ namespace frmAeropuerto.Models
         {
             NpgsqlCommand cmd = new NpgsqlCommand($"DELETE FROM flights WHERE flight_id=@flightId", Connection.connectDatabase());
             cmd.Parameters.AddWithValue("@flightId", FlightId);
-            try
+            
+            if (cmd.ExecuteNonQuery() == 1)
             {
-                if (cmd.ExecuteNonQuery() == 1)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return true;
             }
-            catch (Exception)
+            else
             {
                 return false;
             }
+            
         }
     }
 }
